@@ -50,3 +50,8 @@
 #### 4. Add template files in static (js, css)
 #### 5. collect static by running command
 #### 6. Add template code and fix sources of local css, js and images
+#### 7. Refactor code
+#### 8. include - {% load static %} if we are loading anything from static from a page
+
+
+
