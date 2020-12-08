@@ -53,10 +53,12 @@
 #### 7. Refactor code
 #### 8. include - {% load static %} if we are loading anything from static from a page
 
-## Create Models for Slider for the homepage
+## Setting up Slider for the homepage
 #### 1. Created Slider class with fields that are required to be stored in the database
 #### 2. Register the model to Django Admin in admin page(add the code) and then run -> python manage.py makemigrations and then -> python manage.py migrate
 #### 3. Note - migrations to be made for every entry to database
 #### 4. Now add data from admin panel
 #### 5. Show all this in the webpage
+#### 6. Add code to views and pass data for specific page
+#### 7. Edited Home.html and added dynamic code.
 
