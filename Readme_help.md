@@ -77,11 +77,19 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 1. Go to views.py and add teams in data
 #### 2. Update frontend - home.html page to display data from database
 
-## Youtuber app
+## Youtuber app - Creating the app + Restricting choice of the user
 #### 1. Create app -> python manage.py startapp youtubers
 #### 2. Update settings.py - INSTALLED_APPS
 #### 3. Go to urls.py in tubers and add the youtube url
 #### 4. Create urls.py in youtubers app
-#### 5. Add routes in new url.py
+#### 5. Add routes in new urls.py
 #### 6. Now define methods in views.py
+#### 7. Create model in models.py
+#### 8. Register the model admin.py in youtubers app
+#### 9. Perform migration
+#### 10. Restrict user choice in Models - in models.py
+#### 11. Create choices and pass it as parameter
+#### 12. We now change textfield in admin panel - install django-ckeditor and mention in installed apps(follow : https://github.com/django-ckeditor/django-ckeditor)
+#### 13. Import ckeditor add RichTextField as field
+#### 14. Make migrations
 
