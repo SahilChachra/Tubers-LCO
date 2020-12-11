@@ -30,8 +30,9 @@
 #### 5. After following the guide in github repo - run migration command
 
 ## Add static files
-#### 1. Follow documentations
-#### 2. run -> python manage.py collectstatic
+#### 1. Add JS, CSS & images in tubers/tubers/static/
+#### 2. Follow documentations
+#### 3. run -> python manage.py collectstatic
 
 ## Start App
 #### 1. Create app -> python manage.py startapp appName
@@ -55,10 +56,12 @@
 
 ## Setting up Slider for the homepage
 #### 1. Created Slider class with fields that are required to be stored in the database in models.py
-#### 2. Register the model to Django Admin in admin page(add the code) and then run -> python manage.py makemigrations and then -> python manage.py migrate
+#### 2. Register the model to Django Admin in admin page(add the code - admin.site.register(class_name)) and then run -> python manage.py makemigrations and then -> python manage.py migrate
 #### 3. Note - migrations to be made for every entry to database(every change to database schema)
 #### 4. Now add data from admin panel
 #### 5. Show all this in the webpage
 #### 6. Add code to views and pass data for specific page
 #### 7. Edited Home.html and added dynamic code.
+
+## 
 
