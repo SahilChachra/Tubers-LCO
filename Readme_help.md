@@ -94,3 +94,8 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 14. Make migrations
 #### 15. Edit admin panel view for Youtubers app
 
+## Transfer data from Youtube app to Webpages app
+#### 1. Go to Webpgaes/views and import the app
+#### 2. Mention the data required from the Model
+#### 3. Update frontend - home.html
+
