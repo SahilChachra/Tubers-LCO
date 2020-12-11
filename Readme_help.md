@@ -92,4 +92,5 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 12. We now change textfield in admin panel - install django-ckeditor and mention in installed apps(follow : https://github.com/django-ckeditor/django-ckeditor)
 #### 13. Import ckeditor add RichTextField as field
 #### 14. Make migrations
+#### 15. Edit admin panel view for Youtubers app
 

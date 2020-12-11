@@ -14,7 +14,7 @@ class Youtuber(models.Model):
     camera_choices = (
         ('camera', 'camera'),
         ('nikon', 'nikon'),
-        ('song', 'song'),
+        ('sony', 'sony'),
         ('other', 'other'),
     )
 
@@ -22,7 +22,7 @@ class Youtuber(models.Model):
         ('code', 'code'),
         ('vlogs', 'vlogs'),
         ('comedy', 'comedy'),
-        ('panasonic', 'panasonic'),
+        ('technical', 'technical'),
         ('cooking', 'cooking'),
     )
     
