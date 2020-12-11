@@ -63,5 +63,11 @@
 #### 6. Add code to views and pass data for specific page
 #### 7. Edited Home.html and added dynamic code.
 
-## 
+## Adding more things to Admin Panel
+#### 1. in admin.py create a class and pass admin.ModelAdmin
+#### 2. Parameters used are being overriden by us by passing a new values
+#### 3. list_display - can be overridden
+#### 4. To make selected field as clickable use list_display_link
+#### 5. To enable search, search_field = ('parameter',)
+#### 6. to add filter -> list_field = ('para',)
 
