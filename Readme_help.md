@@ -75,4 +75,13 @@ We can defines many functions to change the view of the data in admin panel. Fol
 
 ## Show Teams dynamically
 #### 1. Go to views.py and add teams in data
+#### 2. Update frontend - home.html page to display data from database
+
+## Youtuber app
+#### 1. Create app -> python manage.py startapp youtubers
+#### 2. Update settings.py - INSTALLED_APPS
+#### 3. Go to urls.py in tubers and add the youtube url
+#### 4. Create urls.py in youtubers app
+#### 5. Add routes in new url.py
+#### 6. Now define methods in views.py
 

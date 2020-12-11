@@ -21,4 +21,5 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('webpages.urls')),  # home page link, to go webpages then to file url
+    path('youtubers/', include('youtubers.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #part of static configuration
