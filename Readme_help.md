@@ -99,3 +99,6 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 2. Mention the data required from the Model
 #### 3. Update frontend - home.html
 
+## Fixing Navbar
+#### 1. Use -> {% url 'home' %} where home comes from url mentioned in urls.py of webpages app
+
