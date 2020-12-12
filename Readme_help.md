@@ -108,10 +108,17 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 3. Go to views.py in youtubers and in youtubers(), fetch the data and pass it with the template
 #### 4. When we pass url in template(like in href) the code is {% url 'name_of_function_in_views.py' %}
 
-## For setting up search
+## For setting up Search(general) in home.html
 #### 1. Create new html page in youtubers/search.html and add the data
 #### 2. In views.py, add the search function
 #### 3. Created a query to get the data
 #### 4. POST request requires CSRF token (for GET request its not required)
 #### 5. Edit form tag - put method='get/post and action='url_of_page' attributes
 #### 6. Give name to input same as that used in views.py (eg : keyword in seach() and keyword in input tag in search page)
+
+## For filtered search
+#### 1. In function search write relevant quiers and pass it on data
+#### 2. Write relevant if statements for query
+#### 3. In the search.html, mention method and action in form tag
+#### 4. Replace all hard coded values with dynamic value
+#### 5. Use for loops to display options
