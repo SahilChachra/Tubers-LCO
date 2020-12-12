@@ -17,4 +17,15 @@ def youtubers_detail(request, id): # page for each specific youtuber
     return render(request, 'youtubers/youtuber_detail.html', data)
 
 def search(request):
-    pass
+    
+    tubers = Youtuber.objects.order_by('-created_date')
+
+    if 'keyword' in request.GET:
+        keyword = request.GET['keyword']
+        if keyword:
+            tubers = tubers.filter(description__icontains=keyword)
+
+    data = {
+        'tubers' : tubers,
+    }
+    return render(request, 'youtubers/search.html', data)
