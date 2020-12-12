@@ -106,5 +106,5 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 1. Created new folder named youtubers in templates
 #### 2. Added new html file (paste the code there of the page)
 #### 3. Go to views.py in youtubers and in youtubers(), fetch the data and pass it with the template
-#### 4.
+#### 4. When we pass url in template(like in href) the code is {% url 'name_of_function_in_views.py' %}
 
