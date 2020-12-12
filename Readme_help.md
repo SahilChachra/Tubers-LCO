@@ -102,3 +102,9 @@ We can defines many functions to change the view of the data in admin panel. Fol
 ## Fixing Navbar
 #### 1. Use -> {% url 'home' %} where home comes from url mentioned in urls.py of webpages app
 
+## Connect Tubers in navbar to page
+#### 1. Created new folder named youtubers in templates
+#### 2. Added new html file (paste the code there of the page)
+#### 3. Go to views.py in youtubers and in youtubers(), fetch the data and pass it with the template
+#### 4.
+
