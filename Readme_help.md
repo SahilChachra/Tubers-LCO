@@ -161,3 +161,13 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 1. Import and add decorator - login_required - to protect the route
 #### 2. Add if else in Navbar to configure buttons for signed in user and not signed in user
 
+## Fb and Google authentication
+#### 1. Install django-allauth
+#### 2. Visit - https://django-allauth.readthedocs.io/en/latest/installation.html and copy relevant imports to tubers/settings.py/Installed_apps
+#### 3. Configure urls.py -> add path('socialaccounts/', include('allauth.urls'))
+#### 4. Now perform migrations
+#### 5. FOLLOW *Section 9 Video 9* - NOT IMPLEMENTED IN PROJECT DUE TO SECURITY PURPOSE
+#### 6. Add - To initiate login - https://django-allauth.readthedocs.io/en/latest/providers.html#facebook
+#### 7. Add LOGIN_REDIRECT_URL in settings.py
+#### 8. Button submits the form so change button to a tag in Facebook/Google sign-up - Follow - https://django-allauth.readthedocs.io/en/latest/providers.html#facebook
+#### 9. Follow same for Google - check in configurations
