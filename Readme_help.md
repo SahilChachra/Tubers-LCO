@@ -122,3 +122,18 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 3. In the search.html, mention method and action in form tag
 #### 4. Replace all hard coded values with dynamic value
 #### 5. Use for loops to display options
+
+##  Creating Accounts
+#### 1. Create new app -> python manage.py startapp accounts
+#### 2. Register the app by mentioning the name of app in Settings.py
+#### Go to app.py of Accounts and copy class name. Go to main app's(tubers) settings.py and mention it in INSTALLED_APPS
+#### Syntax is -> app_name.apps.classNameCopiedFromApp.py
+#### 3. Now update main app's (tubers) urls.py and metion path
+#### 4. Create urls.py in accounts
+#### 5. Now mention all the urls required for the app
+#### views.logout is inbuilt in Django. It's keyword. avoid using it
+#### 6. Now go to views.py and add functions for each url defined in accounts/urls.py
+#### 7. 
+
+
+
