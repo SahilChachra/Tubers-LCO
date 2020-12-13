@@ -3,6 +3,7 @@ from django.contrib.auth import logout
 # Create your views here.
 from django.contrib.auth.models import User
 from django.contrib import messages, auth
+from django.contrib.auth.decorators import login_required
 
 def login(request):
 
@@ -57,6 +58,7 @@ def register(request):
 
     return render(request, 'accounts/register.html')
 
+@login_required(login_url='login')
 def dashboard(request):
     return render(request, 'accounts/dashboard.html')
 

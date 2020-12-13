@@ -155,7 +155,9 @@ We can defines many functions to change the view of the data in admin panel. Fol
 ## Configure Login Page
 #### 1. Go to login.html and add method and action
 #### 2. Give names to the field to all inputs
-#### 3. 
-#### 4.
-#### 5.
-#### 6.
+#### 3. Go to views.py and write the logic for login
+
+## Allow only logged in user to view dashboard
+#### 1. Import and add decorator - login_required - to protect the route
+#### 2. Add if else in Navbar to configure buttons for signed in user and not signed in user
+
