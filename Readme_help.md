@@ -151,3 +151,11 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 5. User -> predefined model for user in Django
 #### 6. Perform checks of password and other fields (whatever required)
 #### 7. Password entered will be auto-encrypted
+
+## Configure Login Page
+#### 1. Go to login.html and add method and action
+#### 2. Give names to the field to all inputs
+#### 3. 
+#### 4.
+#### 5.
+#### 6.

@@ -5,6 +5,23 @@ from django.contrib.auth.models import User
 from django.contrib import messages, auth
 
 def login(request):
+
+    if request.method=='POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        
+        user = auth.authenticate(username=username,password=password) # available to all django templates by default
+        # authenticate just checks if user is there in database or not
+        if user is not None:
+            auth.login(request, user)
+            messages.success(request, "Logged in.")
+            return redirect("dashboard")
+
+        else:
+            messages.error(request, "Invalid credentials.")
+            return redirect("login")
+
+
     return render(request, 'accounts/login.html')
 
 def logout_user(request):
@@ -23,11 +40,11 @@ def register(request):
 
         if password == confirm_password:
             if User.objects.filter(username=username).exists():
-                message.error(request, "Username exists!")
+                messages.error(request, "Username exists!")
                 return redirect('register')
             else:
                 if User.objects.filter(email=email).exists():
-                    message.error(request, "Email exists")
+                    messages.error(request, "Email exists")
                     return redirect('resgiter')
                 else:
                     user = User.objects.create_user(first_name=firstname, last_name=lastname, username=username, email=email, password=password)
