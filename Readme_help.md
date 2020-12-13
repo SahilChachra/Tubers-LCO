@@ -149,3 +149,5 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 3. Add name to inputs in form
 #### 4. Now in accounts/views.py fetch the data(in register()) from the form only if method==POST
 #### 5. User -> predefined model for user in Django
+#### 6. Perform checks of password and other fields (whatever required)
+#### 7. Password entered will be auto-encrypted

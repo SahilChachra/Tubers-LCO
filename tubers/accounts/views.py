@@ -21,10 +21,22 @@ def register(request):
         password = request.POST['password']
         confirm_password = request.POST['confirm_password']
 
-        user = User.objects.create_user(firstname=firstname, lastname=lastname, username=username, email=email, password=password)
-        user.save()
-        messages.success(request, 'Account created successfully!')
-        return redirect('login')
+        if password == confirm_password:
+            if User.objects.filter(username=username).exists():
+                message.error(request, "Username exists!")
+                return redirect('register')
+            else:
+                if User.objects.filter(email=email).exists():
+                    message.error(request, "Email exists")
+                    return redirect('resgiter')
+                else:
+                    user = User.objects.create_user(first_name=firstname, last_name=lastname, username=username, email=email, password=password)
+                    user.save()
+                    messages.success(request, 'Account created successfully!')
+                    return redirect('login')
+        else:
+            messages.error(request, "Password mismatch")
+            return redirect('register')
 
     return render(request, 'accounts/register.html')
 
