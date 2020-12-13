@@ -144,4 +144,8 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 2. Go to accounts/views import logout from auth and in logout_user function call logout(request)
 
 ## Configure Register page
-#### 1. 
+#### 1. In register.html, add method and action to the form 
+#### 2. Add { csrf_token } -> this way django verifies it's post method only
+#### 3. Add name to inputs in form
+#### 4. Now in accounts/views.py fetch the data(in register()) from the form only if method==POST
+#### 5. User -> predefined model for user in Django
