@@ -139,3 +139,9 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 10. Load static in template and correct the urls mentioned in template as {% static './path' %}
 #### 11. Now configure rest of the pages like above (from step 9)
 
+## Configure Buttons - Login and Signup and logout
+#### 1. Go to templates/includes/navbar and add relevant url to buttons
+#### 2. Go to accounts/views import logout from auth and in logout_user function call logout(request)
+
+## Configure Register page
+#### 1. 
