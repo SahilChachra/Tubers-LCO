@@ -133,7 +133,9 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 5. Now mention all the urls required for the app
 #### views.logout is inbuilt in Django. It's keyword. avoid using it
 #### 6. Now go to views.py and add functions for each url defined in accounts/urls.py
-#### 7. 
-
-
+#### 7. Configure Templates - in views.py return render(request, 'path/template_name.html')
+#### 8. Add new folder in templates - accounts. 
+#### 9. Now add extends base, block content and HTML code to login.html
+#### 10. Load static in template and correct the urls mentioned in template as {% static './path' %}
+#### 11. Now configure rest of the pages like above (from step 9)
 
