@@ -11,8 +11,6 @@ def home(request):
 
     all_tubers = Youtuber.objects.order_by('-created_date')
 
-
-
     data = {
         'sliders' : sliders,
         'teams' : teams,
