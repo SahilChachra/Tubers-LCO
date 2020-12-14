@@ -19,7 +19,7 @@ def login(request):
             return redirect("dashboard")
 
         else:
-            messages.error(request, "Invalid credentials.")
+            messages.warning(request, "Invalid credentials.")
             return redirect("login")
 
 
@@ -41,11 +41,11 @@ def register(request):
 
         if password == confirm_password:
             if User.objects.filter(username=username).exists():
-                messages.error(request, "Username exists!")
+                messages.warning(request, "Username exists!")
                 return redirect('register')
             else:
                 if User.objects.filter(email=email).exists():
-                    messages.error(request, "Email exists")
+                    messages.warning(request, "Email exists")
                     return redirect('resgiter')
                 else:
                     user = User.objects.create_user(first_name=firstname, last_name=lastname, username=username, email=email, password=password)
@@ -53,7 +53,7 @@ def register(request):
                     messages.success(request, 'Account created successfully!')
                     return redirect('login')
         else:
-            messages.error(request, "Password mismatch")
+            messages.warning(request, "Password mismatch")
             return redirect('register')
 
     return render(request, 'accounts/register.html')

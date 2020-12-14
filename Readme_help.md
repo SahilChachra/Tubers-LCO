@@ -171,3 +171,14 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 7. Add LOGIN_REDIRECT_URL in settings.py
 #### 8. Button submits the form so change button to a tag in Facebook/Google sign-up - Follow - https://django-allauth.readthedocs.io/en/latest/providers.html#facebook
 #### 9. Follow same for Google - check in configurations
+
+## Messaging Framework
+#### 1. Create a messages.html file in templates
+#### 2. Follow -> https://getbootstrap.com/docs/5.0/components/alerts/
+#### 3. Create if-else part and add the html code from above link
+#### 4. Inject template in the alret-{{message.tags}}
+#### 5. Then visit - https://docs.djangoproject.com/en/3.1/ref/contrib/messages/ 
+#### 6. Include - {% include 'messages.html' %} in webpages
+#### 7. 
+
+
