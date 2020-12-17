@@ -179,6 +179,11 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 4. Inject template in the alret-{{message.tags}}
 #### 5. Then visit - https://docs.djangoproject.com/en/3.1/ref/contrib/messages/ 
 #### 6. Include - {% include 'messages.html' %} in webpages
-#### 7. 
 
+## Contact Form
+#### Create a new app - hiretubers
+#### Register the new app tubers/settings.py
+#### Create urls.py and mention path
+#### Create model for form in models.py
+#### 
 
