@@ -185,6 +185,12 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### Register the new app tubers/settings.py
 #### Create urls.py and mention path
 #### Create model for form in models.py
+#### Go to tubers/urls.py and add new path with app name
+#### Go to new_app/admin.py, import model created from models.py and add admin.site.resgiter(modelName)
+#### Now go to views.py and add method==POST then fetch the values
+#### Create a object and pass values fetched and save it
+#### Print a message and rediredt the user
+#### Edit HTML form for Contact form and add name and method
 
 
 ## Assignment Solutions
@@ -192,5 +198,5 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 2. Go to webpages/admin.py. Create a new class/edit if there. Add list_display and pass the parameters in tuple
 #### 3. Go to home.html and wrap the image in <a> tag - <a href="{% url 'youtubers_detail' object_name.id %}" > <img...> </a>. 
 #### 4. Go to webpages/views.py and check if Teams data is being passed to about.html. If no then pass it. Then go to about.html and add iterate through teams
-#### 5. 
+#### 5. Create new app. Resgister app in INSTALLED_APPS in tubers/settings.py. Create urls.py and add routes. Now create a model.
 
