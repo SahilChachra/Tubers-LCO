@@ -9,10 +9,3 @@ Done 5. Contact Us - Form - Create New app (contacttubers) for this contact form
 9. Search in Tubers Page
 10. Services Page - Create more cards or add payment
 11. When Login, should welcome with User name and Tubes name
-
-headline = models.CharField(max_length=255)
-    subtitle = models.CharField(max_length=255)
-    button_text = models.CharField(max_length=255)
-    photo = models.ImageField(upload_to = 'media/slider/%Y/')
-    created_date = models.DateTimeField(auto_now_add=True)
-    link = models.CharField(max_length=255)

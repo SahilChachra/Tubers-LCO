@@ -181,8 +181,9 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### 6. Include - {% include 'messages.html' %} in webpages
 
 ## Contact Form
-#### Create a new app - hiretubers
+#### Create a new app - hiretubers or new_app
 #### Register the new app tubers/settings.py
+#### Go to tubers/urls.py and mention new path for this app
 #### Create urls.py and mention path
 #### Create model for form in models.py
 #### Go to tubers/urls.py and add new path with app name
@@ -190,7 +191,7 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### Now go to views.py and add method==POST then fetch the values
 #### Create a object and pass values fetched and save it
 #### Print a message and rediredt the user
-#### Edit HTML form for Contact form and add name and method
+#### Edit HTML form for Contact form, add csrf_token, add name and method
 
 
 ## Assignment Solutions
