@@ -185,5 +185,12 @@ We can defines many functions to change the view of the data in admin panel. Fol
 #### Register the new app tubers/settings.py
 #### Create urls.py and mention path
 #### Create model for form in models.py
-#### 
+
+
+## Assignment Solutions
+#### 1. Go to Hiretubers/admin.py. Add a class and pass model.AdminModel and create a variable list_display and pass the parameters to be displayed in Admin panel
+#### 2. Go to webpages/admin.py. Create a new class/edit if there. Add list_display and pass the parameters in tuple
+#### 3. Go to home.html and wrap the image in <a> tag - <a href="{% url 'youtubers_detail' object_name.id %}" > <img...> </a>. 
+#### 4. Go to webpages/views.py and check if Teams data is being passed to about.html. If no then pass it. Then go to about.html and add iterate through teams
+#### 5. 
 

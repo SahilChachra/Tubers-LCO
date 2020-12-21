@@ -16,5 +16,12 @@ class TeamAdmin(admin.ModelAdmin):
     #to get filter on side
     list_filter = ('role', )
 
-admin.site.register(Slider) # To make the model visible in our admin panel
+class SliderAdmin(admin.ModelAdmin):
+
+    def slider_photo(self, object):
+        return format_html('<img src="{}" width="40"/>'.format(object.photo.url))
+    
+    list_display = ('headline', 'slider_photo', 'button_text')
+
+admin.site.register(Slider, SliderAdmin) # To make the model visible in our admin panel
 admin.site.register(Team, TeamAdmin) #resgiter Team model
