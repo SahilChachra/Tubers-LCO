@@ -1,6 +1,6 @@
 from django.contrib import admin
 # Register your models here.
-from .models import Slider, Team
+from .models import Slider, Team, BaseAppModel
 from django.utils.html import format_html # allows formatting
 
 class TeamAdmin(admin.ModelAdmin):
@@ -23,5 +23,10 @@ class SliderAdmin(admin.ModelAdmin):
     
     list_display = ('headline', 'slider_photo', 'button_text')
 
+class BaseAppAdmin(admin.ModelAdmin):
+    
+    list_display = ('email', 'phone')   
+
 admin.site.register(Slider, SliderAdmin) # To make the model visible in our admin panel
 admin.site.register(Team, TeamAdmin) #resgiter Team model
+admin.site.register(BaseAppModel, BaseAppAdmin)

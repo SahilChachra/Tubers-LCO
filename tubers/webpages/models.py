@@ -1,5 +1,5 @@
 from django.db import models
-
+from datetime import datetime
 # Create your models here.
 class Slider(models.Model):
     headline = models.CharField(max_length=255)
@@ -24,5 +24,9 @@ class Team(models.Model):
 
     def __str__(self):
         return self.first_name
-    
 
+class BaseAppModel(models.Model):
+    email = models.CharField(max_length=255)
+    phone = models.CharField(max_length=255 )
+    fb_link = models.CharField(max_length=255 ,default='https://facebook.com/')
+    created_date = models.DateTimeField(default=datetime.now, blank=True)

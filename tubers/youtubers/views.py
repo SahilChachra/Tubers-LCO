@@ -4,6 +4,7 @@ from .models import Youtuber
 
 def youtubers(request): # for youtubers.html
     tubers = Youtuber.objects.order_by('-created_date')
+    print(tubers)
     data = {
         'tubers' : tubers,
     }
